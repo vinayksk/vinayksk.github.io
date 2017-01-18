@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.intro{
+    background-color: #FF6551;
+	height: 100vh;
+}
+
+#test{
+	border-width: thick;
+	border-bottom-color: white;
+}
