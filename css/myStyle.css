@@ -7,7 +7,34 @@
 	height: 100vh;
 }
 
+.footer{
+	background-color: #FFB439;
+	height: 8vh;
+}
+
+.middle{
+	height: 100vh;
+	background-color: #FF7E30;
+}
+
 #test{
 	border-width: thick;
 	border-bottom-color: white;
+}
+
+#me{
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {left:100px; opacity: 0;}
+    100% {left:0px; opacity: 1; }
+}
+
+#tester{
+	vertical-align: middle;
 }
