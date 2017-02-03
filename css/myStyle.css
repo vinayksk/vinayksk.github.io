@@ -17,6 +17,11 @@
 	background-color: #FF7E30;
 }
 
+.experience{
+	height:100vh;
+	background-color: #FFDA01;
+}
+
 #test{
 	border-width: thick;
 	border-bottom-color: white;
@@ -25,9 +30,9 @@
 #me{
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 
 @keyframes example {
@@ -35,6 +40,15 @@
     100% {left:0px; opacity: 1; }
 }
 
-#tester{
-	vertical-align: middle;
+#meCol{
+	position: relative;
+    -webkit-animation-name: meCol; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: meCol;
+    animation-duration: 4s;
+}
+
+@keyframes meCol {
+    0%   {opacity: 0;}
+    100% {opacity: 1; }
 }
