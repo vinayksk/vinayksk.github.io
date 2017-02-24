@@ -1,12 +1,14 @@
 $(window).scroll(function(){
+
     var pos = $(this).scrollTop();
-	var height2 = window.innerHeight * 2  - 50;
-	var height3 = window.innerHeight * 3 - 100;
-	var height4 = window.innerHeight * 4 - 150;
-	if(pos < window.innerHeight) {
+	var toolbar = document.getElementById("navb").clientHeight;
+	var height2 = window.innerHeight * 2  - toolbar;
+	var height3 = window.innerHeight * 3 - 80;
+	var height4 = window.innerHeight * 4 - 120;
+	if(pos < (window.innerHeight - toolbar)) {
         document.getElementById("header").innerHTML = "Welcome";
     }
-    if(pos > window.innerHeight) {
+    if(pos > (window.innerHeight - toolbar)) {
         document.getElementById("header").innerHTML = "About Me";
     }
     if(pos > (height2)) {

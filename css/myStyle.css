@@ -2,24 +2,29 @@
 /* CSS Document */
 
 
+
 .intro{
     background-color: #FF6551;
-	height: 100vh;
+	min-height: 100vh;
+	overflow: auto;
 }
 
 .footer{
 	background-color: #FFB439;
-	height: 8vh;
+	min-height: 8vh;
+	overflow: auto;
 }
 
 .middle{
-	height: 100vh;
+	min-height: 100vh;
+	overflow: auto;
 	background-color: #FF7E30;
 }
 
 .experience{
-	height:100vh;
-	background-color: #FFDA01;
+	min-height:100vh;
+	overflow: auto;
+	background-color: #FFC000;
 }
 
 #test{
@@ -28,6 +33,7 @@
 }
 
 #me{
+	-webkit-backface-visibility: hidden;
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
@@ -36,11 +42,12 @@
 }
 
 @keyframes example {
-    0%   {left:100px; opacity: 0;}
+    0%   {left:75px; opacity: 0;}
     100% {left:0px; opacity: 1; }
 }
 
 #meCol{
+	-webkit-backface-visibility: hidden;
 	position: relative;
     -webkit-animation-name: meCol; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
@@ -48,7 +55,23 @@
     animation-duration: 4s;
 }
 
+#fade{
+	-webkit-backface-visibility: hidden;
+	position: relative;
+    -webkit-animation-name: meCol; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: fade;
+    animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
 @keyframes meCol {
     0%   {opacity: 0;}
     100% {opacity: 1; }
+}
+
+@keyframes fade {
+    0%   {opacity: 0;}
+    50% {opacity: 1; }
+	100%   {opacity: 0;}
 }
