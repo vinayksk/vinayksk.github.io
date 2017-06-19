@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Vinay Senthil</title>
-<link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vinay Senthil</title>
+    <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="boots4/css/bootstrap.min.css">
-<link rel="stylesheet" href="boots4/js/bootstrap.min.js">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/myStyle.css">
-<script type="text/javascript" src="js/scroll.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="boots4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="boots4/js/bootstrap.min.js">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type='text/javascript' src='js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='js/particle.js'></script>
 </head>
 <body>
 <nav id="navb" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" style="display: inline; max-height: 47px;">
@@ -28,25 +30,34 @@
     <div class="col"> <a href = "https://github.com/vinayksk/" style="float: right; padding-left: 10px; "> <img src="pictures/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" height="30px"> </a> <a href = "https://devpost.com/vinayksk/" style="float: right;"> <img src="pictures/devpost1600.png" height="30px"> </a> <a href = "https://linkedin.com/in/vinay-senthil/" style="float: right; padding-right: 5px;"> <img src="pictures\linkedin-in-for-screen\LinkedIn [in] for Screen\White\In-White-54px-R.png" height="30px"> </a> </div>
   </div>
 </nav>
-<div class="intro" id="top">
-  <div class="container-fluid">
-    <div class="row" style="padding-top: 50px;">
-      <div class="col-6" id="meCol">
-        <h1 class="display-2" style="padding-top: 26vh;  color: white; text-align: center;">Hi, my name is Vinay.</h1>
-        <p class="lead" style="padding-top: 2vh; color: white; text-align: center;">I like robotics.</p>
-      </div>
-      <div class="col-6"> <img id="me" src="pictures/ohioee.png" style="padding-top: 2vh; max-width: 30em; display:block;
-    margin:auto;"> </div>
-      <div id="fade" class="col" style="text-align: center;"> <span style=" color: white;">Learn More</span> <img src="pictures/noun_35.png" style="height: 1.5em; padding-bottom: 4px; "> </div>
+<div class="intro">
+    <div id="particles" style="min-height: 100vh;">
+        <div id="intro">
+            <div class="container-fluid">
+                <div class="row" style="padding-top: 30px;">
+                    <div class="col-6 media" id="meCol">
+                        <div class="align-self-center">
+                            <h1 class="display-2" style="color: white; text-align: center;">Hi, my name is Vinay.</h1>
+                            <p class="lead" style="padding-top: 2vh; color: white; text-align: center;">I like robotics.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 media" style="align-content: center">
+                        <img class="align-self-center" id="me" src="pictures/ohioee.png" style="max-width: 30em; display:block; margin: auto; vertical-align: middle;"> </div>
+                    <div id="fade" class="col" style="text-align: center;">
+                        <span style=" color: white;">Learn More</span>
+                        <img src="pictures/noun_35.png" style="height: 1.5em; padding-bottom: 4px; "> </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <div class="middle">
   <div class="container">
     <h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">About Me</h1>
     <div class="container">
       <div class="row">
-        <div class="col" style="height: 400px;"> <img src="pictures/robot.jpg" style="border-radius: 5px; height: 28em; display:block; margin: auto; padding-right: 10px;"> </div>
+        <div class="col" style="height: 400px;">
+            <img src="pictures/robot.jpg" style="border-radius: 5px; height: 28em; display:block; vertical-align:middle; margin-top: 0; margin-bottom: 0; padding-right: 10px;"> </div>
         <div class="col">
           <p class="lead" style="color:white; float: right; font-size: 14pt">I am a senior at Lynbrook High School in San Jose, California. I am extremely passionate about pursuing robotics and engineering. I participate in the FIRST Tech Challenge and continue to build metal robots in my garage and at school.<br>
               <br>I am also an avid coder and have worked on various projects that involved programming languages such as JAVA, Python, and HTML. On weekends, I enjoy participating in MLH hackathons.<br>
@@ -75,6 +86,40 @@
           </div>
     </div>
   </div>
+</div>
+<div class="projects">
+    <div class="container">
+        <h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Projects</h1>
+        <ul class="list-unstyled" style="padding-top: 1em;">
+            <li class="media" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                <a href="http://bluestampengineering.com/student-projects/vinay-s/"><img class="d-flex align-self-center mr-3" src="pictures/hand.jpg" alt="Generic placeholder image" style="max-width: 15em"></a>
+                <div class="media-body" style="padding-top: 5px;">
+                    <h5 class="mt-0 mb-1"><b>3D Printed Robotic Hand Prosthetic</b></h5>
+                    For my design, I combined the latest technologies of 3D printing and myoelectric sensors to create a non-invasive bionic hand that is controlled by the impulses in the forearm. I used spools and placed the DC motors into the palms of the hand to mimic the muscles in the hand. The brain of the hand is an Arduino UNO and is powered by 12V.
+                    <br>
+                    <b>Project Link:</b><a href="http://bluestampengineering.com/student-projects/vinay-s/"> http://bluestampengineering.com/student-projects/vinay-s/</a>
+                </div>
+            </li>
+            <li class="media my-4" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                <a href="http://magic.csr.utexas.edu/SEES_projects/vinay"><img class="d-flex align-self-center mr-3" src="pictures/Earthquake.PNG" alt="Generic placeholder image" style="max-width: 15em"></a>
+                <div class="media-body" style="padding-top: 3px;">
+                    <h5 class="mt-0 mb-1"><b>EAGLE</b> - Real Time Earthquake Map</h5>
+                    EAGLE (Earthquake Analysis GIS Layer Engine) queries live earthquake data from USGS from the past 24 hours and displays them on a map, color coded to their magnitude. By clicking on the circles the user can access information such as time, location, and elevation.
+                    <br>
+                    <b>Project Link:</b><a href="http://magic.csr.utexas.edu/SEES_projects/vinay"> http://magic.csr.utexas.edu/SEES_projects/vinay/</a>
+                </div>
+            </li>
+            <li class="media" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                <a href="http://warowac.herokuapp.com/welcome.jsp"><img class="d-flex align-self-center mr-3" src="pictures/warowac.PNG" alt="Generic placeholder image" style="max-width: 15em"></a>
+                <div class="media-body" style="padding-top: 3px;">
+                    <h5 class="mt-0 mb-1"><b>Warowac</b> - Cloud Based Alternative Voting Platform</h5>
+                    The alternative voting system solves the spoiler effect problem in a normal popular vote system by allowing voters to rank the candidates. This website allows users to create elections that stores data in a PostGres database and allows voters to cast their votes in a minimalistic environment.
+                    <br>
+                    <b>Project Link:</b><a href="http://warowac.herokuapp.com/welcome.jsp"> http://warowac.herokuapp.com/welcome.jsp</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 <!--
     <div class="container">

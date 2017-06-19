@@ -1,7 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
+#particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
-
+#intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
 
 .intro{
     background-color: #FF6551;
@@ -25,6 +37,12 @@
 	min-height:100vh;
 	overflow: auto;
 	background-color: #FFC000;
+}
+
+.projects{
+    min-height:100vh;
+    overflow: auto;
+    background-color: #85E052;
 }
 
 #test{
@@ -54,6 +72,8 @@
     animation-name: meCol;
     animation-duration: 4s;
 }
+
+
 
 #fade{
 	-webkit-backface-visibility: hidden;
