@@ -31,26 +31,23 @@
   </div>
 </nav>
 <div class="intro">
-    <div id="particles" style="min-height: 100vh;">
-        <div id="intro">
-            <div class="container-fluid">
-                <div class="row" style="padding-top: 30px;">
-                    <div class="col-6 media" id="meCol">
-                        <div class="align-self-center">
-                            <h1 class="display-2" style="color: white; text-align: center;">Hi, my name is Vinay.</h1>
-                            <p class="lead" style="padding-top: 2vh; color: white; text-align: center;">I like robotics.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 media" style="align-content: center">
-                        <img class="align-self-center" id="me" src="pictures/ohioee.png" style="max-width: 30em; display:block; margin: auto; vertical-align: middle;"> </div>
-                    <div id="fade" class="col" style="text-align: center;">
-                        <span style=" color: white;">Learn More</span>
-                        <img src="pictures/noun_35.png" style="height: 1.5em; padding-bottom: 4px; "> </div>
-                </div>
+    <div class="container-fluid" style="padding-top: 70px;">
+        <div class="row align-items-center">
+            <div class="col-6" id="meCol">
+                <h1 class="display-2" style="color: white; text-align: center;">Hi! My name is Vinay.</h1>
+                <p class="lead" style="padding-top: 2vh; color: white; text-align: center;">Maker | Robotics Enthusiast | Student</p>
+            </div>
+            <div class="col-6">
+                <img id="me" src="pictures/ohioee.png" style="max-width: 30em;display: block; margin-left: auto; margin-right: auto;">
             </div>
         </div>
     </div>
+    <div id="fade" class="col" style="text-align: center;">
+        <span style=" color: white;">Learn More</span>
+        <img src="pictures/noun_35.png" style="height: 1.5em; padding-bottom: 4px;">
+    </div>
 </div>
+
 <div class="middle">
   <div class="container">
     <h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">About Me</h1>
@@ -92,7 +89,7 @@
         <h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Projects</h1>
         <ul class="list-unstyled" style="padding-top: 1em;">
             <li class="media" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-                <a href="http://bluestampengineering.com/student-projects/vinay-s/"><img class="d-flex align-self-center mr-3" src="pictures/hand.jpg" alt="Generic placeholder image" style="max-width: 15em"></a>
+                <a href="http://bluestampengineering.com/student-projects/vinay-s/"><div class="item d-flex align-self-center mr-3"><img class="d-flex align-self-center mr-3" src="pictures/hand.jpg" alt="Generic placeholder image" style="max-width: 15em"></div></a>
                 <div class="media-body" style="padding-top: 5px;">
                     <h5 class="mt-0 mb-1"><b>3D Printed Robotic Hand Prosthetic</b></h5>
                     For my design, I combined the latest technologies of 3D printing and myoelectric sensors to create a non-invasive bionic hand that is controlled by the impulses in the forearm. I used spools and placed the DC motors into the palms of the hand to mimic the muscles in the hand. The brain of the hand is an Arduino UNO and is powered by 12V.
@@ -100,8 +97,8 @@
                     <b>Project Link:</b><a href="http://bluestampengineering.com/student-projects/vinay-s/"> http://bluestampengineering.com/student-projects/vinay-s/</a>
                 </div>
             </li>
-            <li class="media my-4" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-                <a href="http://magic.csr.utexas.edu/SEES_projects/vinay"><img class="d-flex align-self-center mr-3" src="pictures/Earthquake.PNG" alt="Generic placeholder image" style="max-width: 15em"></a>
+            <li class="media my-3" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                <a href="http://magic.csr.utexas.edu/SEES_projects/vinay"><div class="item d-flex align-self-center mr-3"><img class="d-flex align-self-center mr-3" src="pictures/Earthquake.PNG" alt="Generic placeholder image" style="max-width: 15em"></div></a>
                 <div class="media-body" style="padding-top: 3px;">
                     <h5 class="mt-0 mb-1"><b>EAGLE</b> - Real Time Earthquake Map</h5>
                     EAGLE (Earthquake Analysis GIS Layer Engine) queries live earthquake data from USGS from the past 24 hours and displays them on a map, color coded to their magnitude. By clicking on the circles the user can access information such as time, location, and elevation.
@@ -110,7 +107,7 @@
                 </div>
             </li>
             <li class="media" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-                <a href="http://warowac.herokuapp.com/welcome.jsp"><img class="d-flex align-self-center mr-3" src="pictures/warowac.PNG" alt="Generic placeholder image" style="max-width: 15em"></a>
+                <a href="http://warowac.herokuapp.com/welcome.jsp"><div class="item d-flex align-self-center mr-3"><img class="d-flex align-self-center mr-3" src="pictures/warowac.PNG" alt="Generic placeholder image" style="max-width: 15em"></div></a>
                 <div class="media-body" style="padding-top: 3px;">
                     <h5 class="mt-0 mb-1"><b>Warowac</b> - Cloud Based Alternative Voting Platform</h5>
                     The alternative voting system solves the spoiler effect problem in a normal popular vote system by allowing voters to rank the candidates. This website allows users to create elections that stores data in a PostGres database and allows voters to cast their votes in a minimalistic environment.
@@ -118,9 +115,23 @@
                     <b>Project Link:</b><a href="http://warowac.herokuapp.com/welcome.jsp"> http://warowac.herokuapp.com/welcome.jsp</a>
                 </div>
             </li>
+            <li class="media my-3" style="background-color: #C6F74E; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                <a href="https://goo.gl/Kzgfp5"><div class="item d-flex align-self-center mr-3"><img class="d-flex align-self-center mr-3" src="pictures/final%20gui%202.PNG" alt="Generic placeholder image" style="max-width: 15em"></div></a>
+                <div class="media-body" style="padding-top: 5px;">
+                    <h5 class="mt-0 mb-1"><b>3D Modeling and Real Time Data Analysis Algorithm for Bronchoscopies</b></h5>
+                    This algorithm analyzes the video feed from the tip of the bronchoscopy tool to generate and reconstruct a 3D model of the lungs as the doctor moves the bronchoscope deeper into the lungs. By using MATLAB's image processing and math toolbox, I created a GUI-fied version of my algorithm as an radiation-free enhancement for doctors who perform the procedure. This project was selected to be presented at the California State Science Fair.
+                    <br>
+                    <b>Project Journal:</b><a href="https://goo.gl/Kzgfp5"> https://goo.gl/Kzgfp5</a>
+                </div>
+            </li>
         </ul>
-    </div>
+        </div>
 </div>
+<!--<div class="accolades">-->
+    <!--<div class="container">-->
+        <!--<h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Accolades</h1>-->
+    <!--</div>-->
+<!--</div>-->
 <!--
     <div class="container">
       <div class="jumbotron">

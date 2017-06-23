@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     lineColor: '#51FFA9',
       density: 15000
   });
-  var intro = document.getElementById('intro');
+  var intro = document.getElementById('particles');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 }, false);
 
