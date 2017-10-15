@@ -45,6 +45,11 @@
     overflow: auto;
     background-color: #45CFF7;
 }
+.contact{
+    min-height:50vh;
+    overflow: auto;
+    background-color: black;
+}
 
 #test{
 	border-width: thick;
@@ -121,4 +126,13 @@
     transform: scale(1.1);
 }
 
+#git:visited, #git:link, #git:active
+{
+    text-decoration: none;
+}
 
+#git:hover img,span{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

@@ -4,7 +4,7 @@ $(window).scroll(function(){
 	var toolbar = document.getElementById("navb").clientHeight;
 	var height2 = window.innerHeight * 2  - toolbar;
 	var height3 = window.innerHeight * 3 + 7;
-	var height4 = window.innerHeight * 4 - 120;
+	var height4 = window.innerHeight * 4 + 195;
 	if(pos < (window.innerHeight - toolbar)) {
         document.getElementById("header").innerHTML = "Welcome";
     }
@@ -18,6 +18,6 @@ $(window).scroll(function(){
         document.getElementById("header").innerHTML = "Projects";
     }
     if(pos > (height4)) {
-        document.getElementById("header").innerHTML = "New text!";
+        document.getElementById("header").innerHTML = "Accolades";
     }
 });

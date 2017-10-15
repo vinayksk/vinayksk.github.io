@@ -13,8 +13,9 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/myStyle.css">
     <script type="text/javascript" src="js/scroll.js"></script>
-    <script type='text/javascript' src='js/jquery.particleground.js'></script>
-    <script type='text/javascript' src='js/particle.js'></script>
+    <script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="js/particle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
 </head>
 <body>
 <nav id="navb" class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" style="display: inline; max-height: 47px;">
@@ -24,10 +25,10 @@
     </div>
     <div class="col">
       <div style="color: ghostwhite; text-align: center;">
-        <p id="header">Welcome</p>
+        <p id="header" style="font-family: 'Josefin Sans', sans-serif; font-size: 16pt">Welcome</p>
       </div>
     </div>
-    <div class="col"> <a href = "https://github.com/vinayksk/" style="float: right; padding-left: 10px; "> <img src="pictures/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" height="30px"> </a> <a href = "https://devpost.com/vinayksk/" style="float: right;"> <img src="pictures/devpost1600.png" height="30px"> </a> <a href = "https://linkedin.com/in/vinay-senthil/" style="float: right; padding-right: 5px;"> <img src="pictures\linkedin-in-for-screen\LinkedIn [in] for Screen\White\In-White-54px-R.png" height="30px"> </a> </div>
+    <div class="col"> </a> <a href = "https://github.com/vinayksk/" style="float: right; padding-left: 10px; "> <img src="pictures/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" height="30px"> </a> <a href = "https://devpost.com/vinayksk/" style="float: right;"> <img src="pictures/devpost1600.png" height="30px"> </a> <a href = "https://linkedin.com/in/vinay-senthil/" style="float: right; padding-right: 5px;"> <img src="pictures\linkedin-in-for-screen\LinkedIn [in] for Screen\White\In-White-54px-R.png" height="30px"> </a> <a href = "https://vinayksk.myportfolio.com/" style="float: right; padding-right: 15px"> <img src="pictures/noun_1147350_cc.png" height="30px"></a> </div>
   </div>
 </nav>
 <div class="intro">
@@ -80,7 +81,14 @@
           <img src="pictures/nasa.png" style="height:300px; display: block; margin: auto; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
             <p style="text-align: center; padding-top: 10px;">During this research internship at the J.J Pickle Research Center in partnership with UT Austin, I worked with the MAGIC (Mid-American Geospatial Information Center), to create a web app to help emergency responders. Specifically, I developed a <b>real-time world earthquake map</b> to provide information such as location and dangers about events. Aside from my main project, I learned how NASA responds to natural disasters, the importance of remoter sensing, and the bodies and physics of outer space. </p>
         </div>
-          </div>
+      </div>
+      <div class="row" style="padding-bottom: 5px;  width:50%; margin: auto;">
+        <div class="col" style="background-color: #FFD34C; height: auto; margin: 5px; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+            <p class="lead" style="text-align: center; padding-top: 5px;"><b>UCLA High School Summer Internship | 2017</b></p>
+          <img src="pictures/ucla.jpg" style="display: block; margin: auto; height:300px; align-content: center; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+            <p style="text-align: center; padding-top: 10px;">During this 8 weeks engineering internship, my project revolved around researching an alternative to the centralized computing architectures that handle large amounts of data used by machine learning algorithms nowadays. <b>The project’s goal was to prove the practicality of this alternative architecture known as distributed computing</b> that divides the workload across many smaller computers instead of investing resources to build a powerful supercomputer. My task was to create an SVM classification algorithm that implements the distributed computing to prove its applicability in the real world.</p>
+        </div>
+	   </div>
     </div>
   </div>
 </div>
@@ -125,26 +133,44 @@
                 </div>
             </li>
         </ul>
+        <a href="http://github.com/vinayksk" id = "git"><div style="text-align: center; padding-bottom: 20px;">
+            <span style="color: white;">For more projects visit: </span>
+            <img src="pictures/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png">
+        </div></a>
         </div>
 </div>
-<!--<div class="accolades">-->
-    <!--<div class="container">-->
-        <!--<h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Accolades</h1>-->
-    <!--</div>-->
-<!--</div>-->
-<!--
+<div class="accolades">
     <div class="container">
-      <div class="jumbotron">
-        <h1>Hi, my name is Vinay.</h1>
-        <p class="lead">I like robtics.</p>
-        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
-      </div>
+        <h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Accolades</h1>
+        <div class="row">
+        	<div class="col">
+        		<p style="color: white; font-size: 20pt">Resume:</p>
+        		<iframe style="margin-bottom: 15px; display: block;" src="https://drive.google.com/file/d/0BwlbXB5HzLiqOWRwMnQ1RE9oV2M/preview" width="640" height="480"></iframe>
+        	</div>
+        	<div class="col" style="color: white;">
+				<p style="padding-left: 20px; font-size: 20pt">Awards:</p>
+				<p>3/2017 - 1st Place in Category and Qualified to California State Science Fair</p>
+				<p>5/2016 - Top 20 International Finalist, DECA ICDC</p>
+				<p>3/2016 - 1st Place, Entrepreneurship Independent Business, 2016 DECA SCDC</p>
+				<p>3/2015 - 4th Place, Entrepreneurship Startup Business, 2016 DECA SCDC</p>
+				<p>2/2015 - Inspire Award, FTC Robotics</p>
+       		</div>
+        </div>
+        
     </div>
--->
+</div>
+<div class="contact">
+    <div class="container">
+        <h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Contact Me</h1>
+        <iframe style="margin: 0 auto; display: block; padding-bottom: 15px" src="https://docs.google.com/forms/d/e/1FAIpQLSdHdeP6bdM16D1KWFj0GqR-u-GD2msleOCvk1j7dLFmTieRGA/viewform?embedded=true" width="70%" height="350" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>	
+    </div>
+        
+</div>
+
 
 <div class="footer">
   <div class="container">
-    <p style="text-align: center; color: ghostwhite; padding-top: 8px;">Made by Vinay | 2017</p>
+    <p style="text-align: center; color: ghostwhite; padding-top: 10px; font-family: 'Josefin Sans', sans-serif; font-size: 18pt;">Built by Vinay S. | 2017</p>
   </div>
 </div>
 
