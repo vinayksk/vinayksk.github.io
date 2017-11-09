@@ -174,12 +174,34 @@
     </div>
 </div>
 <div class="contact">
+<!--
     <div class="container">
         <h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Contact Me</h1>
         <iframe style="margin: 0 auto; display: block; padding-bottom: 15px" src="https://docs.google.com/forms/d/e/1FAIpQLSdHdeP6bdM16D1KWFj0GqR-u-GD2msleOCvk1j7dLFmTieRGA/viewform?embedded=true" width="70%" height="350" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>	
     </div>
+-->
+	<div class="container" style="padding-bottom: 20px">
+		<h1 class="display-4" style="text-align: center; padding-top: 10px; color: ghostwhite;">Contact Me</h1>
+		<form class="w-50" style="display: block; margin: 0 auto" method="POST" name="contactform" action="php/form.php">
+			<div class="form-group">
+				<label style="color:white" for="name">Full Name</label>
+				<input type="name" class="form-control" id="name" aria-describedby="nameHelp">
+<!--				<small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+			</div>
+			<div class="form-group">
+				<label style="color:white" for="email">Email address</label>
+				<input type="email" class="form-control" id="email">
+			</div>
+			<div class="form-group">
+				<label style="color:white" for="message">Message</label>
+				<textarea class="form-control" id="message" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+</div>
         
 </div>
+
 
 
 <div class="footer">
