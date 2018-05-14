@@ -4,7 +4,7 @@ $(window).scroll(function(){
 	var toolbar = document.getElementById("navb").clientHeight;
 	var height2 = window.innerHeight * 2  - toolbar;
 	var height3 = window.innerHeight * 4 + 30;
-	var height4 = window.innerHeight * 5 + 195;
+	var height4 = window.innerHeight * 5 + 405;
 	var height5 = height4 + window.innerHeight + 10;
 	if(pos < (window.innerHeight - toolbar)) {
         document.getElementById("header").innerHTML = "Welcome";
