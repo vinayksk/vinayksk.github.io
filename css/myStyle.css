@@ -16,9 +16,6 @@
     top:50%;
 }
 
-.int{
-    overflow: auto;
-}
 
 .pulsate {
     -webkit-animation: pulsate 3s ease-out;
@@ -35,6 +32,26 @@
     100% { 
         opacity: 0.5;
     }
+}
+
+.experience-left{
+    text-align: center; 
+    background-color: #FFD34C; 
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); 
+    margin-left: 2vh;
+    margin-right: 2vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
+}
+
+.experience-right{
+    text-align: center; 
+    background-color: #FFD34C; 
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); 
+    margin-left: 2vh;
+    margin-right: 2vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
 }
 
 .footer{

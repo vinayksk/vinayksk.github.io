@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="css/myStyle.css">
+
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src='js/main.js'></script>
@@ -51,7 +53,9 @@
         <div class="row h-100 int my-auto" style="background-color: #FF6551;">
             <div class="col-sm-6 my-auto" style="text-align: center; margin-top: auto; margin-bottom: auto; color:white;">
                 <h1 class="display-2" style="padding-top: 2vh;">Hi! My name is Vinay.</h1>
-                <p class="lead" style="padding-bottom: 2vh"><strong>Maker | Robotics Enthusiast | Student</strong> </p>
+                <p class="lead" style="padding-bottom: 2vh">
+                    <strong>Maker | Robotics Enthusiast | Student</strong>
+                </p>
             </div>
             <div class="col-sm-6 my-auto" style="text-align: center; background-color: #FF6551;">
                 <div class="m-1">
@@ -59,22 +63,23 @@
                 </div>
             </div>
         </div>
-        <div id="fade" style="text-align: center; color: white; padding-top:2vh; padding-bottom: 2vh; ">
+        <div class="pulsate" style="text-align: center; color: white; padding-top:0vh; padding-bottom: 2vh; ">
             <span>Learn More</span>
-            <img src="pictures/noun_35.png" style="height: 1.5em; padding-bottom: 1vh;">
-    
+            <br>
+            <img src="pictures/downward arrow.png" style="height: 1em; padding-bottom: 1vh;">
+
         </div>
     </header>
-    <div class="container-fluid" style="background-color: #FF7E30; height: 100vh">
-        <div style="text-align: center; margin-top: 0">
+    <div class="container-fluid" style="background-color: #FF7E30; min-height: 100vh">
+        <div style="text-align: center; padding-top: 2vh;">
             <span class="display-4" style="color: white;">About Me</span>
         </div>
-        <div class="row" style="background-color: #FF7E30; height: 85%">
+        <div class="row" style="background-color: #FF7E30; height: 85%; margin-top: 1vh;">
             <div class="col-sm-6 my-auto" style="text-align: center; margin-top: auto; margin-bottom: auto; color:white;">
-                <img src="pictures/robot.jpg" style="height: 75%; width:75%; padding-top: 2vh;">
+                <img src="pictures/robot.jpg" style="height: 75%; width:75%; padding-bottom: 2vh;">
             </div>
             <div class="col-sm-6 my-auto" style="text-align: center; background-color: #FF7E30">
-                <p class="lead" style="color:white;  font-size: 14pt; padding-top: 2vh">I am a senior at Lynbrook High School in San Jose, California. I am extremely passionate about pursuing robotics
+                <p class="lead" style="color:white;  font-size: 14pt;">I am a senior at Lynbrook High School in San Jose, California. I am extremely passionate about pursuing robotics
                     and engineering. I participate in the FIRST Tech Challenge and continue to build metal robots in my garage
                     and at school.
                     <br>
@@ -87,6 +92,66 @@
                     <br>
                     <br>Feel free to send me an email about any opportunities or questions!
                 </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #FFB439; min-height: 100vh;">
+        <div style="text-align: center; padding-top: 2vh;">
+            <span class="display-4" style="color: white;">Experience</span>
+        </div>
+        <div class="row justify-content-center" style="background-color: #FFB439; height: 100%; margin-top: 2vh;">
+            <div class="col-sm-6">
+                <div class="experience-left">
+                    <p class="lead" style="text-align: center; padding-top: 5px;">
+                        <b>Blue Stamp Engineering | 2015</b>
+                    </p>
+                    <img src="pictures/bluestamp.jpg" style="display: block; margin: auto; height:300px; align-content: center; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                    <p style="text-align: center;  padding-top: 2%; padding-bottom: 2%">In this summer program, I planned, designed, and built a
+                        <b>robotic hand controlled by myoelectric signals in the forearm</b>. The goal was to create a low cost,
+                        reproducible, and advanced hand prosthetic to solve the current problem of limited and expensive
+                        prosthetics. I gained experience working with 3D printing process as well as with the design process
+                        to go from scratch to a final product. I continued this project and displayed at the Pre-Collegiate
+                        Stanford Science Conference and the Synopsys Science Fair.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="experience-right">
+                    <p class="lead" style="text-align: center; padding-top: 5px; width:100%;">
+                        <b>NASA SEES Internship | 2016</b>
+                    </p>
+                    <img src="pictures/nasa.png" style=" height:300px; display: block; margin: auto; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                    <p style="text-align: center; padding-top: 2%; padding-bottom: 2%">During this research internship at the J.J Pickle Research Center in partnership with UT Austin, I worked
+                        with the MAGIC (Mid-American Geospatial Information Center), to create a web app to help emergency
+                        responders. Specifically, I developed a
+                        <b>real-time world earthquake map</b> to provide information such as location and dangers about events.
+                        Aside from my main project, I learned how NASA responds to natural disasters, the importance of remoter
+                        sensing, and the bodies and physics of outer space. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="background-color: #FFB439; height: 100%; margin-top: 2vh;">
+            <div class="col-sm-6">
+                <div class="experience-left">
+                    <p class="lead" style="text-align: center; padding-top: 5px;">
+                        <b>UCLA High School Summer Internship | 2017</b>
+                    </p>
+                    <img src="pictures/ucla.jpg" style="display: block; margin: auto; height:300px; align-content: center; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
+                    <p style="text-align: center; padding-top: 2%; padding-bottom: 2%">During this 8 weeks engineering internship, my project revolved around researching an alternative to
+                        the centralized computing architectures that handle large amounts of data used by machine learning
+                        algorithms nowadays.
+                        <b>The project’s goal was to prove the practicality of this alternative architecture known as distributed
+                            computing</b> that divides the workload across many smaller computers instead of investing resources
+                        to build a powerful supercomputer. My task was to create an SVM classification algorithm that implements
+                        the distributed computing to prove its applicability in the real world.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="experience-right">
+                    <p class="lead" style="text-align: center; padding-top: 5px; width:100%;">
+                        <b>Project YX | 2018</b>
+                    </p>
+                    <p style="text-align: center; padding-top: 2%; padding-bottom: 2%">Coming Soon! </p>
+                </div>
             </div>
         </div>
     </div>
