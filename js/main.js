@@ -4,6 +4,17 @@ $(document).ready(function () {
     $('.int').height(final);
 })
 
+$(document).keydown(function(e){
+    if(e.which === 123){
+       return false;
+    }
+});
+
+$(document).bind("contextmenu",function(e) { 
+	e.preventDefault();
+ 
+});
+
 function smoothScroll(destination) {
     nav = $('.navbar').height();
     header = $('.header').height();
