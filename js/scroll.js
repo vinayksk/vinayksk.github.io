@@ -1,7 +1,7 @@
 $(window).scroll(function(){
 
     var pos = $(this).scrollTop();
-	var toolbar = document.getElementById("navb").clientHeight;
+	var toolbar = document.getElementById("navb").clientHeight + 50;
 	var height2 = window.innerHeight * 2  - toolbar;
 	var height3 = window.innerHeight * 4 + 30;
 	var height4 = window.innerHeight * 5 + 405;

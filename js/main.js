@@ -24,26 +24,26 @@ function smoothScroll(destination) {
     var d = 0
     if (destination == "about"){
         console.log(destination)
-        d = nav + header + 16;
+        d = nav + header;
         console.log(scroll)
     }
     if (destination == "experience"){
         console.log(destination)
-        d = nav + header + about + 16;
+        d = nav + header + about;
         console.log(scroll)
     }
     if (destination == "projects"){
         console.log(destination)
-        d = nav + header + about + experience + 16;
+        d = nav + header + about + experience;
         console.log(scroll)
     }
     if (destination == "accolades"){
         console.log(destination)
-        d = nav + header + about + experience + projects + 16;
+        d = nav + header + about + experience + projects;
         console.log(scroll)
     }
     window.scroll({
-        top: d, 
+        top: d + 34, 
         left: 0, 
         behavior: 'smooth' 
       });
