@@ -1,106 +1,45 @@
 @charset "utf-8";
-/* CSS Document */
-/*#intro {*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 50%;*/
-    /*padding: 0 20px;*/
-    /*width: 100%;*/
- /**/
-/*}*/
 
-.intro{
-    background-color: #FF6551;
-    min-height: 100vh;
-	overflow: auto;
-    top:50%;
+.cfont{
+    font-family: nunito, sans-serif; 
+    font-style: normal;
+}
+
+.exp {
+    color: #e69318;
+}
+
+.exp-header{
+    color: #e69318;
+}
+
+.proj-header{
+    color: #8c8feb;
+}
+
+.acc-header{
+    color: #47c49c;
+    padding-bottom: 2vh;
 }
 
 
 .pulsate {
-    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation: pulsate 5s ease-out;
     -webkit-animation-iteration-count: infinite; 
-    opacity: 0.5;
+    opacity: 0;
 }
 @-webkit-keyframes pulsate {
     0% { 
-        opacity: 0.5;
+        opacity: 0;
     }
     50% { 
         opacity: 1.0;
     }
     100% { 
-        opacity: 0.5;
+        opacity: 0;
     }
 }
 
-.experience-left{
-    text-align: center; 
-    background-color: #FFD34C; 
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); 
-    margin-left: 1vh;
-    margin-right: 1vh;
-    padding-right: 3vh;
-    padding-left: 3vh;
-}
-
-.experience-center{
-    text-align: center; 
-    background-color: #FFD34C; 
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); 
-    padding-right: 3vh;
-    padding-left: 3vh;
-}
-
-.experience-right{
-    text-align: center; 
-    background-color: #FFD34C; 
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); 
-    margin-left: 1vh;
-    margin-right: 1vh;
-    padding-right: 3vh;
-    padding-left: 3vh;
-}
-
-.footer{
-	background-color: #FFB439;
-	min-height: 8vh;
-	overflow: auto;
-}
-
-.middle{
-	min-height: 100vh;
-	overflow: auto;
-	background-color: #FF7E30;
-}
-
-.experience{
-	min-height:100vh;
-	overflow: auto;
-	background-color: #FFC000;
-}
-
-.projects{
-    min-height:100vh;
-    overflow: auto;
-    background-color: #85E052;
-}
-
-.accolades{
-    min-height:100vh;
-    overflow: auto;
-    background-color: #45CFF7;
-}
-.contact{
-    min-height:50vh;
-    overflow: auto;
-    background-color: black;
-}
-
-#test{
-	border-width: thick;
-	border-bottom-color: white;
-}
 
 #me{
 	-webkit-backface-visibility: hidden;
@@ -124,8 +63,6 @@
     animation-name: meCol;
     animation-duration: 4s;
 }
-
-
 
 #fade{
 	-webkit-backface-visibility: hidden;

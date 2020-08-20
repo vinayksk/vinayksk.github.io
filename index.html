@@ -16,36 +16,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vinay Senthil</title>
     <link rel="shortcut icon" href="pictures/logo.png" type="image/x-icon">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
+    <!-- Scrollbar -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- My JS + CSS -->
+    <script type="text/javascript" src='js/main.js'></script>
     <link rel="stylesheet" href="css/myStyle.css">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src='js/main.js'></script>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/dqd2krq.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
-        crossorigin="anonymous"></script>
-    <script src="contact.js"></script>
-
-
+    <!-- Font Aweomse -->
+    <script src="https://kit.fontawesome.com/654b3a2604.js" crossorigin="anonymous"></script>
 
 </head>
 
-
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body style="font-family: nunito, sans-serif; background-color: #F2F2F0;">
+    <nav id="navb" class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(242,242,240, 0.94);">
         <a class="navbar-brand" href="#">
-            <img src="pictures/logo_white.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="pictures/logo2.png" width="30" height="30" class="d-inline-block align-top" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -53,289 +51,393 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: flex-end">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" onclick="smoothScroll('about')">
+                <a id="about_btn" class="nav-item nav-link" onclick="smoothScroll('about')" style="color:#FF4063">
                     About</a>
-                <a class="nav-item nav-link" onclick="smoothScroll('experience')">
+                <a class="nav-item nav-link" onclick="smoothScroll('experience')" style="color: #FF4063">
                     Experience
                 </a>
-                <a class="nav-item nav-link" onclick="smoothScroll('projects')">
+                <a class="nav-item nav-link" onclick="smoothScroll('projects')" style="color: #FF4063">
                     Projects
                 </a>
-                <a class="nav-item nav-link" onclick="smoothScroll('accolades')">
+                <a class="nav-item nav-link" onclick="smoothScroll('accolades')" style="color: #FF4063">
                     Accolades
                 </a>
             </div>
         </div>
     </nav>
-    <header class="header container-fluid" style="background-color: #FF6551; min-height: 91vh; padding-top: 3vh;">
-        <div class="row h-100 int my-auto" style="background-color: #FF6551;">
-            <div class="col-sm-6 my-auto" style="text-align: center; margin-top: auto; margin-bottom: auto; color: white;">
-                <h1 class="display-2" style="padding-top: 2vh; padding-bottom: 3vh;">Hi! I'm Vinay.</h1>
-                <p class="lead" style="padding-bottom: 2vh; color: white">
-                    <strong>Maker | Robotics Enthusiast | Student</strong>
-                </p>
+    <div id="intro" class="container-fluid" style="min-height: 100vh;">
+        <div id="intro_row" class="row" style="padding-top: 20vh;">
+            <div class="col-md-6 my-auto" style="text-align: center;">
+                <h1 class="display-2 cfont">Hi! I'm Vinay.</h1>
+                <p class="lead cfont" style="color: #FF4063">Maker | Robotics Enthusiast | Student</p>
             </div>
-            <div class="col-sm-6 my-auto" style="text-align: center; background-color: #FF6551;">
+            <div class="col-md-6 my-auto" style="text-align: center;">
                 <div class="m-1">
-                    <img src="pictures/vinay_circle.png" alt="..." style="height: 70%; width: 70%; padding-top: 2vh; padding-bottom: 1vh">
+                    <img class="shadow rounded-circle" src="pictures/vinay_circle.png" alt="..." style="height: 70%; width: 70%;">
                 </div>
             </div>
         </div>
-        <div id="learn" onclick="smoothScroll('about')" class="pulsate" style="text-align: center; color: white; padding-top:0vh; padding-bottom: 2vh; ">
-            <span>Learn More</span>
+        <div id="learn" onclick="smoothScroll('about')" class="pulsate" style="text-align: center;">
+            <span class="cfont" style="font-weight: 400;">Learn More</span>
             <br>
-            <img src="pictures/downward arrow.png" style="height: 1em; padding-bottom: 1vh;">
-
+            <i class="fas fa-angle-down" style="color: #FF4063"></i>
         </div>
-    </header>
-
-    <div id="about" class="container-fluid" style="background-color: #FF7E30; min-height: 100vh">
-        <div style="text-align: center; padding-top: 2vh;">
-            <span class="display-4" style="color: white;">About Me</span>
+    </div>
+    <div id="about" class="container-fluid" style="padding-top: 10vh; padding-bottom: 2vh;">
+        <div style="text-align: center;">
+            <span class="display-4">About Me</span>
         </div>
-        <div class="row justify-content-center" style="background-color: #FF7E30; height: 85%; margin-top: 3vh;">
-            <div class="col-sm-6" style="text-align: center; margin: auto; color:white;">
-                <img src="pictures/robot.jpg" style="height: 75%; width:75%; padding-bottom: 2vh;">
+        <div class="row" style="margin-top: 2vh;">
+            <div class="col-md-6 my-auto" style="text-align: center; padding: 8vh 8vw">
+                <img class="img-fluid shadow rounded" src="pictures/robot.jpg">
             </div>
-            <div class="col-sm-6" style="text-align: center; background-color: #FF7E30; margin: auto;">
-                <p class="" style="color: seashell;  font-size: 13pt; margin-right: 6vh;">I am a sophomore studying CS and business through the dual degree Jerome Fisher Program in Management and Technology at the University of Pennsylvania. I aspire to make the world a better place by innovating new ideas and rethinking current ones.
-                    
-                    I am extremely excited about the future of robotics, machine learning, and biomechanics. Currently, I research approaches to drone detection in simulation at the GRASP robotics lab and use ML to optimize aerodynamics as part of the Penn Electric Racing team. 
-                    <br>
-                    <br>I enjoy participating in MLH hackathons with friends and have worked on various projects that involved programming languages such
-                    as JAVA, Python, and Ruby on Rails.
-                    <br><br>Feel free reach out to me at <b><u><a href="mailto:vinayksk@seas.upenn.edu" style="color: white">vinayksk@seas.upenn.edu</a></u></b> regarding any cool ideas, opportunities, or questions!
+            <div class="col-md-6 my-auto" style="text-align: center;">
+                <p style="margin-right: 5vw; margin-left: 5vw;"> I'm a rising junior studying Computer Science and Finance
+                    through the dual degree Jerome Fisher Program in Management and Technology at the University of Pennsylvania. 
+                    I aspire to make the world a better place by innovating new ideas and rethinking current ones.
+                    I am extremely excited about the future of robotics, machine learning, and biomechanics. 
+                    Currently, I research approaches to drone detection in simulation at the GRASP robotics lab 
+                    and use ML to optimize aerodynamics as part of the Penn Electric Racing team. 
+                    <br><br>
+                    I enjoy participating in MLH hackathons with friends and have worked on various projects that 
+                    involved programming languages such as JAVA, Python, and Ruby on Rails.
+                    <br><br>
+                    Feel free reach out to me at 
+                    <b><u><a href="mailto:vinayksk@seas.upenn.edu">vinayksk@seas.upenn.edu</a></u></b> 
+                    regarding any cool ideas, opportunities, or questions!
                 </p>
             </div>
         </div>
     </div>
-    <div id="experience" class="container-fluid" style="background-color: #FFB439; min-height: 100vh;">
-        <div style="text-align: center; padding-top: 2vh;">
-            <span class="display-4" style="color: white;">Experience</span>
+    <div id="experience" class="container-fluid" style="padding-top: 10vh; padding-bottom: 2vh;">
+        <div style="text-align: center;">
+            <span class="display-4">Experience</span>
         </div>
-        <div class="row justify-content-center" style="background-color: #FFB439; height: 100%; margin-top: 4vh;">
-            <div class="col-sm-4">
-                <div class="experience-left">
-                    <p class="lead" style="text-align: center; padding-top: 3vh;">
-                        <b>Blue Stamp Engineering | 2015</b>
-                    </p>
-                    <img src="pictures/bluestamp.jpg" style="display: block; margin: auto; width: 100%; height: 100%; align-content: center; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-                    <p style="text-align: center;  padding-top: 4%; padding-bottom: 4%">In this summer program, I planned,
+        <div class="row" style="margin-top: 8vh; margin-left: 3vw; margin-right: 3vw;">
+            <div class="col-md-4">
+                <div class="card bg-transparent" style="width: 100%; border: 0">
+                    <div style="padding: 2vh 1vw;">
+                        <img src="pictures/foxpass.jpg" class="card-img shadow rounded" alt="...">
+                    </div>  
+                    <div class="card-body shadow rounded" style="background-color: #F1F0F2;">
+                        <h5 class="card-title exp-header"><b>Foxpass | 2020</b></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Software Engineering</h6>
+                        <p class="card-text"> Coming soon!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-transparent" style="width: 100%; border: 0">
+                    <div style="padding: 2vh 1vw;">
+                        <img src="pictures/xilinx_sq.jpg" class="card-img shadow rounded" alt="...">
+                    </div>  
+                    <div class="card-body shadow rounded" style="background-color: #F1F0F2;">
+                        <h5 class="card-title exp-header"><b>Xilinx | 2019</b></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Embedded Software Engineering</h6>
+                        <p class="card-text"> This was my first experience at a large company and a dedicated manager.
+                            My project was <b class="exp">to use the Yocto flow to create linux distros that enables more developers to program FPGAs</b> with a Python based platform called PYNQ.
+                            I modified Jupyter notebooks that implemented BNNs (Binary Neural Networks) to minimize dependencies and became fluent with Git rebases and remotes. Finally, I converted my work into packages that can be installed from a DNF server onto a device.
+                        </p>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-4">
+                <div class="card bg-transparent" style="width: 100%; border: 0">
+                    <div style="padding: 2vh 1vw;">
+                        <img src="pictures/project_yx_sq.jpg" class="card-img shadow rounded" alt="...">
+                    </div>  
+                    <div class="card-body shadow rounded" style="background-color: #F1F0F2;">
+                        <h5 class="card-title exp-header"><b>Project YX | 2018</b></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Software Engineering</h6>
+                        <p class="card-text">After winning a 2nd place at CruzHacks, the sponsoring company, Project YX, asked our team to work with them over the summer. 
+                            I worked on a <b class="exp">new machine learning project that would automatically categorize and upload an article of clothing to a digital wardrobe </b> after a stylist takes a picture of it. The tool was built on Ruby on Rails, 
+                            and implemented Clarifai's object detection software. The workflow receives raw images of clothing and tags their type (shirt, pant, and 35 more categories) using Clarifai.
+                        </p>
+                    </div>
+                </div>
+            </div>         
+        </div>
+        <div class="row" style="margin-top: 5vh; margin-left: 3vw; margin-right: 3vw;">
+            <div class="col-md-4">
+                <div class="card bg-transparent" style="width: 100%; border: 0">
+                    <div style="padding: 2vh 1vw;">
+                        <img src="pictures/ucla_sq.jpg" class="card-img shadow rounded" alt="...">
+                    </div>  
+                    <div class="card-body shadow rounded" style="background-color: #F1F0F2;">
+                        <h5 class="card-title exp-header"><b>UCLA HSSRP | 2017</b></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Research Intern</h6>
+                        <p class="card-text">During this 8-week internship,
+                            my project was <b class="exp">to prove the practicality of an alternative architecture known as distributed
+                                computing
+                            </b> that divides the workload across many smaller computers instead of investing resources to build
+                            a powerful supercomputer. My task was to create an SVM classification algorithm from scratch (i.e. no external Python libraries) that implements
+                            distributed computing to prove its applicability in the real world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-transparent" style="width: 100%; border: 0">
+                    <div style="padding: 2vh 1vw;">
+                        <img src="pictures/nasa_sq.png" class="card-img shadow rounded" alt="...">
+                    </div>  
+                    <div class="card-body shadow rounded" style="background-color: #F1F0F2;">
+                        <h5 class="card-title exp-header"><b>NASA SEES Internship | 2016</b></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Research Intern</h6>
+                        <p class="card-text">During this research internship at
+                            the J.J Pickle Research Center in partnership with UT Austin, I worked with the MAGIC (Mid-American
+                            Geospatial Information Center), to create a web app to help emergency responders. Specifically, I
+                            developed a
+                            <b class="exp">real-time world earthquake map</b> to provide information such as location and dangers about events.
+                            Aside from my main project, I learned how NASA responds to natural disasters and the importance of remote
+                            sensing. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-transparent" style="width: 100%; border: 0">
+                    <div style="padding: 2vh 1vw;">
+                        <img src="pictures/bluestamp_sq.jpg" class="card-img shadow rounded" alt="...">
+                    </div>  
+                    <div class="card-body shadow rounded" style="background-color: #F1F0F2;">
+                        <h5 class="card-title exp-header"><b>Blue Stamp Engineering | 2015</b></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Student Engineer</h6>
+                        <p class="card-text">In this summer program, I planned,
                         designed, and built a
-                        <b>robotic hand controlled by myoelectric signals in the forearm</b>. The goal was to create a low
+                        <b class="exp">robotic hand controlled by myoelectric signals in the forearm</b>. The goal was to create a low
                         cost, reproducible, and advanced hand prosthetic to attempt to solve the problem of expensive
-                        prosthetics. I worked with 3D printing software and learned the design process
-                        to go from scratch to a final product. I continued this project and displayed at the Pre-Collegiate
+                        prosthetics. I worked with Autodesk Inventor, 3D printers, and the Arduino programming language. I continued this project and presented at the Pre-Collegiate
                         Stanford Science Conference and the Synopsys Science Fair.</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="experience-center">
-                    <p class="lead" style="text-align: center; padding-top: 3vh; width:100%;">
-                        <b>NASA SEES Internship | 2016</b>
-                    </p>
-                    <img src="pictures/nasa.png" style=" height: 57%; width: 57%; display: block; margin: auto; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-                    <p style="text-align: center; padding-top: 4%; padding-bottom: 4%">During this research internship at
-                        the J.J Pickle Research Center in partnership with UT Austin, I worked with the MAGIC (Mid-American
-                        Geospatial Information Center), to create a web app to help emergency responders. Specifically, I
-                        developed a
-                        <b>real-time world earthquake map</b> to provide information such as location and dangers about events.
-                        Aside from my main project, I learned how NASA responds to natural disasters and the importance of remote
-                        sensing. </p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="experience-right">
-                    <p class="lead" style="text-align: center; padding-top: 3vh;">
-                        <b>UCLA HSSRP | 2017</b>
-                    </p>
-                    <img src="pictures/ucla.jpg" style="display: block; margin: auto; height:100%; width: 100%; align-content: center; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-                    <p style="text-align: center; padding-top: 4%; padding-bottom: 4%">During this 8-week internship,
-                        my project was <b>to prove the practicality of an alternative architecture known as distributed
-                            computing
-                        </b> that divides the workload across many smaller computers instead of investing resources to build
-                        a powerful supercomputer. My task was to create an SVM classification algorithm from scratch (i.e. no external Python libraries) that implements
-                        distributed computing to prove its applicability in the real world.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center" style="background-color: #FFB439; height: 100%; margin-top: 2vh;">
-            <div class="col-sm-4">
-                <div class="experience-left">
-                    <p class="lead" style="text-align: center; padding-top: 3vh;">
-                        <b>Project YX | 2018</b>
-                    </p>
-                    <img src="pictures/project yx.JPG" style="display: block; margin: auto; height:70%; width: 70%; align-content: center; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-                    <p style="text-align: center; padding-top: 4%; padding-bottom: 4%">After winning a 2nd place at CruzHacks, the sponsoring company, Project YX, asked our team to work with them over the summer. 
-                        I worked on a <b>new machine learning project that would automatically categorize and upload an article of clothing to a digital wardrobe </b> after a stylist takes a picture of it. The tool was built on Ruby on Rails, 
-                        and implemented Clarifai's object detection software. The workflow receives raw images of clothing and tags their type (shirt, pant, and 35 more categories) using Clarifai.</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="experience-center">
-                    <p class="lead" style="text-align: center; padding-top: 3vh; width:100%;">
-                        <b>Xilinx | 2019</b>
-                    </p>
-                    <img src="pictures/xilinx2.jpg" style="display: block; margin: auto; height:87%; width: 87%; align-content: center; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);">
-
-                    <p style="text-align: center; padding-top: 4%; padding-bottom: 4%"> This was my first experience at a large company and a dedicated manager.
-                        My project was <b>to use the Yocto flow to create linux distros that enables more developers to program FPGAs</b> with a Python based platform called PYNQ.
-                        I modified Jupyter notebooks that implemented BNNs (Binary Neural Networks) to minimize dependencies and became fluent with Git rebases and remotes. Finally, I converted my work into packages that can be installed from a DNF server onto a device.
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="experience-right">
-                    <p class="lead" style="text-align: center; padding-top: 3vh; width:100%;">
-                        <b>??? | 2020</b>
-                    </p>
-                    <p style="text-align: center; padding-top: 2%; padding-bottom: 5%">Coming Soon! </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="projects" class="container-fluid" style="background-color: #85E052; min-height: 100vh">
-        <div style="text-align: center; padding-top: 2vh;">
-            <span class="display-4" style="color: white;">Projects</span>
-        </div>
-        <div class="row justify-content-center" style="background-color: #85E052; height: 100%; margin-top: 2vh;">
-            <div class="col-sm-4">
-                <div class="card" style="width: 100%;background-color: #C6F74E;">
-                    <a href="http://bluestampengineering.com/student-projects/vinay-s/">
-                        <img class="card-img-top" src="pictures/hand.jpg" alt="Card image cap">
-                    </a>
-                    <div class="card-header">
-                        <h5>3D Printed Robotic Hand Prosthetic</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"> For my design, I combined the latest technologies of 3D printing and myoelectric
-                            sensors to create a non-invasive bionic hand that is controlled by the impulses in the forearm.
-                            I used spools and placed the DC motors into the palms of the hand to mimic the muscles in the
-                            hand. The brain of the hand is an Arduino UNO and is powered by 12V.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card" style="width: 100%; background-color: #C6F74E;">
-                    <a href="http://magiceagle.herokuapp.com/esriMap.html">
-                        <img class="card-img-top" src="pictures/Earthquake.PNG" alt="Card image cap">
-                    </a>
-                    <div class="card-header">
-                        <h5>
-                            <b>EAGLE</b> - Real Time Earthquake Map</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"> EAGLE (Earthquake Analysis GIS Layer Engine) queries live earthquake data from
-                            USGS from the past 24 hours and displays them on a map, color coded to their magnitude. By clicking
-                            on the circles the user can access information such as time, location, and elevation. the hand
-                            is an Arduino UNO and is powered by 12V.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card" style="width: 100%; background-color: #C6F74E;">
-                    <a href="http://warowac.herokuapp.com/welcome.jsp">
-                        <img class="card-img-top" src="pictures/warowac.PNG" alt="Card image cap">
-                    </a>
-                    <div class="card-header">
-                        <h5>
-                            <b>Warowac</b> - Cloud Based Alternative Voting Platform</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"> The alternative voting system solves the spoiler effect problem in a normal
-                            popular vote system by allowing voters to rank the candidates. This website allows users to create
-                            elections that stores data in a PostGres database and allows voters to cast their votes in a
-                            minimalistic environment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center" style="background-color: #85E052; height: 100%; margin-top: 2vh; padding-bottom: 3vh;">
-            <div class="col-sm-4">
-                <div class="card" style="width: 100%; background-color: #C6F74E;">
-                    <a href="https://goo.gl/Kzgfp5">
-                        <img class="card-img-top" src="pictures/final%20gui%202.PNG" alt="Card image cap">
-                    </a>
-                    <div class="card-header">
-                        <h5>3D Modeling and Real Time Analysis Algorithm for Bronchoscopies</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">This algorithm analyzes the video feed from the tip of the bronchoscopy tool
-                            to generate and reconstruct a 3D model of the lungs as the doctor moves the bronchoscope deeper
-                            into the lungs. By using MATLAB's image processing and math toolbox, I created a GUI-fied version
-                            of my algorithm as an radiation-free enhancement for doctors who perform the procedure. This
-                            project was selected to be presented at the California State Science Fair.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card" style="width: 100%; background-color: #C6F74E;">
-                    <a href="https://bit.ly/2IgQB60">
-                        <img class="card-img-top" src="pictures/iris.PNG" alt="Card image cap">
-                    </a>
-                    <div class="card-header">
-                        <h5>
-                            <b>Iris</b> - An Intuitive and and Functional Braille Learning Device</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"> Iris is a device that helps blind people learn Braille. The device is made
-                            of cardboard and 2 3D printed octagons and spikes that can rotate to form any character in the
-                            Braille language. An accompanying app, which has been designed with a minimilistic UI for the
-                            visually impaired, serves as the controller and provides a test and learn mode. The device's
-                            arduino (MKR1000) communicates with the app through WiFi.
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="accolades" class="container-fluid" style="background-color: #45CFF7; min-height: 100vh">
-        <div style="text-align: center; padding-top: 2vh;">
-            <span class="display-4" style="color: white;">Accolades</span>
+    <div id="projects" class="container-fluid" style="padding-top: 10vh; padding-bottom: 2vh;">
+        <div style="text-align: center;">
+            <span class="display-4">Projects</span>
         </div>
-        <div class="row" style="background-color: #45CFF7; height: 85%; margin-top: 1vh;">
-            <div class="col-sm-6" style="text-align: center; margin-top: auto; margin-bottom: auto; color:white; width: 100%">
-                <p class="lead"><strong>Resume:</strong></p>
-                <iframe src="https://drive.google.com/file/d/1AgIE-17xDAvQxBT5k3uxwtIFTuh67X8j/preview" width="100%" height="400vh"></iframe>
+        <div style="margin-top: 8vh; margin-left: 5vw; margin-right: 5vw;">
+            <div class="card mb-3 bg-transparent" style="width: 100%; border: 0;">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto" style="padding: 0.5vh 1.5vw;">
+                        <a href="#">
+                            <img src="pictures/kuvera.PNG" class="card-img my-auto shadow rounded" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-md-8 shadow rounded" style="background-color: #F1F0F2;">
+                        <div class="card-body">
+                            <h5 class="card-title proj-header"><b>Kuvera</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Personalized Investing</h6>
+                            <p class="card-text"> Kuvera is a portfolio advising and visualization platform for retail investors. 
+                                Kuvera addresses investment issues faced by prospective investors (i.e what to trade and when to 
+                                trade). Based on their financial plan, weekly capital contribution, current holdings, and interests, 
+                                Kuvera will generate analytics and personalized stock recommendations with respect to their risk aversion.
+                            </p>
+                            <a href="#" class="badge badge-info">Python Flask</a>
+                            <a href="#" class="badge badge-info">Firestore</a>
+                            <a href="#" class="badge badge-info">Google Cloud Functions</a>
+                            <a href="#" class="badge badge-info">XGBoost</a>
+                            <a href="#" class="badge badge-info">Heroku</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6" style="background-color: #45CFF7;">
-                <p class="lead" style="color: white; text-align: center;"><strong>Awards:</strong></p>
-                <div style="color: black; background-color: #7be0f7; height: auto; width: auto; margin: 5px; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 1px;">
-                    <p>
-                        <b>1/2018</b> - Top 300 Scholar for the Regeneron Science Talent Search</p>
-                    <p>
-                        <b>3/2017</b> - 1
-                        <sup>st</sup> Place in Bioengineering and Computational Biology Category and Qualified to California
-                        State Science Fair</p>
-                    <p>
-                        <b>3/2017</b> - 1
-                        <sup>st</sup> Place for Best iOS App at HSHacks III</p>
-                    <p>
-                        <b>11/2016</b> - Best Overall App at GunnHacks</p>
-                    <p>
-                        <b>5/2016</b> - Top 20 International Finalist, DECA ICDC</p>
-                    <p>
-                        <b>3/2016</b> - 1
-                        <sup>st</sup> Place, Entrepreneurship Independent Business, 2016 DECA SCDC</p>
-                    <p>
-                        <b>3/2015</b> - 4
-                        <sup>sth</sup> Place, Entrepreneurship Startup Business, 2016 DECA SCDC</p>
-                    <p>
-                        <b>2/2015</b> - Inspire Award, FTC Robotics</p>
+            <div class="card mb-3 bg-transparent" style="width: 100%; border: 0;">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto" style="padding: 0.5vh 1.5vw;">
+                        <a href="https://bit.ly/2IgQB60">
+                            <img src="pictures/iris.PNG" class="card-img my-auto shadow rounded" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-md-8 shadow rounded" style="background-color: #F1F0F2;">
+                        <div class="card-body">
+                            <h5 class="card-title proj-header"><b>Iris</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">An Intuitive Braille Learning Device</h6>
+                            <p class="card-text"> Iris is a device that helps blind people learn Braille. The device is made
+                                of cardboard and 2 3D printed octagons and spikes that can rotate to form any character in the
+                                Braille language. An accompanying app, which has been designed with a minimilistic UI for the
+                                visually impaired, serves as the controller and provides a test and learn mode. 
+                            </p>
+                            <a href="#" class="badge badge-info">Arduino MKR1000</a>
+                            <a href="#" class="badge badge-info">iOS App</a>
+                            <a href="#" class="badge badge-info">Firebase</a>
+                            <a href="#" class="badge badge-info">3D Printing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-transparent" style="width: 100%; border: 0;">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto" style="padding: 0.5vh 1.5vw;">
+                        <a href="https://goo.gl/Kzgfp5">
+                            <img src="pictures/final%20gui%202.PNG" class="card-img my-auto shadow rounded" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-md-8 shadow rounded" style="background-color: #F1F0F2;">
+                        <div class="card-body">
+                            <h5 class="card-title proj-header"><b>3D Model of the Lungs</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Real Time Analysis Algorithm</h6>
+                            <p class="card-text">This algorithm analyzes the video feed from the tip of the bronchoscopy tool
+                                to generate and reconstruct a 3D model of the lungs as the doctor moves the bronchoscope deeper
+                                into the lungs. By using MATLAB's image processing and math toolbox, I created a GUI-fied version
+                                of my algorithm as an radiation-free enhancement for doctors who perform the procedure. This
+                                project was selected to be presented at the California State Science Fair.
+                            </p>
+                            <a href="#" class="badge badge-info">MATLAB</a>
+                            <a href="#" class="badge badge-info">OpenCV</a>
+                            <a href="#" class="badge badge-info">3D Reconstruction</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-transparent" style="width: 100%; border: 0;">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto" style="padding: 0.5vh 1.5vw;">
+                        <a href="http://warowac.herokuapp.com/welcome.jsp">
+                            <img src="pictures/warowac.PNG" class="card-img my-auto shadow rounded" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-md-8 shadow rounded" style="background-color: #F1F0F2;">
+                        <div class="card-body">
+                            <h5 class="card-title proj-header"><b>Warowac</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Cloud Based Alternative Voting Platform</h6>
+                            <p class="card-text"> The alternative voting system solves the spoiler effect problem in a normal
+                                popular vote system by allowing voters to rank the candidates. This website allows users to create
+                                elections and voters to cast their votes in a minimalistic environment.
+                            </p>
+                            <a href="#" class="badge badge-info">HTML/CSS + JS</a>
+                            <a href="#" class="badge badge-info">JAVA</a>
+                            <a href="#" class="badge badge-info">Postgres DB</a>
+                            <a href="#" class="badge badge-info">Heroku</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-transparent" style="width: 100%; border: 0;">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto" style="padding: 0.5vh 1.5vw;">
+                        <a href="http://magiceagle.herokuapp.com/esriMap.html">
+                            <img src="pictures/Earthquake.PNG" class="card-img my-auto shadow rounded" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-md-8 shadow rounded" style="background-color: #F1F0F2;">
+                        <div class="card-body">
+                            <h5 class="proj-header card-title"><b>EAGLE</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Real Time Earthquake Map</h6>
+                            <p class="card-text"> EAGLE (Earthquake Analysis GIS Layer Engine) queries live earthquake data from
+                                USGS from the past 24 hours and displays them on a map, color coded to their magnitude. By clicking
+                                on the circles the user can access information such as time, location, and elevation.
+                            </p>
+                            <a href="#" class="badge badge-info">HTML/CSS + JS</a>
+                            <a href="#" class="badge badge-info">REST APIs</a>
+                            <a href="#" class="badge badge-info">Heroku</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-transparent" style="width: 100%; border: 0;">
+                <div class="row no-gutters">
+                    <div class="col-md-4 my-auto" style="padding: 0.5vh 1.5vw;">
+                        <img src="pictures/hand.jpg" class="card-img my-auto shadow rounded" alt="...">
+                    </div>
+                    <div class="col-md-8 shadow rounded" style="background-color: #F1F0F2;">
+                        <div class="card-body">
+                            <h5 class="card-title proj-header"><b>Robotic Hand Prosthetic</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">3D Printed Prototype</h6>
+                            <p class="card-text"> For my design, I combined the latest technologies of 3D printing and myoelectric
+                                sensors to create a non-invasive bionic hand that is controlled by the impulses in the forearm.
+                                I used spools and placed the DC motors into the palms of the hand to mimic the muscles in the
+                                hand.
+                            </p>
+                            <a href="#" class="badge badge-info">Arduino Uno</a>
+                            <a href="#" class="badge badge-info">3D Printing</a>
+                            <a href="#" class="badge badge-info">Autodesk Inventor</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer" style="background-color: #8E02FF">
-        <div class="container-fluid">
-            <div class="my-3" style="text-align: center">
-                <a href = "https://github.com/vinayksk/"><img class="mx-2" src="pictures/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png" height="22px"></a>
-                <a href = "https://devpost.com/vinayksk/"><img class="mx-2" src="pictures/devpost1600.png" height="22px"></a>
-                <a href = "https://linkedin.com/in/vinay-senthil/"><img class="mx-2" src="pictures\linkedin-in-for-screen\LinkedIn [in] for Screen\White\In-White-54px-R.png" height="22px"></a>
-                <a href = "https://vinayksk.myportfolio.com/"><img class="mx-2" src="pictures/noun_1147350_cc.png" height="23px"></div></a>
-            <p class="lead" style="text-align: center; color: ghostwhite;">Built by Vinay S. | <a href="/lit proj/lynbrook.html">2019</a></p>
+    <div id="accolades" class="container-fluid" style="padding-top: 10vh; padding-bottom: 7vh;">
+        <div style="text-align: center;">
+            <span class="display-4">Accolades</span>
+        </div>
+        <div class="row" style="margin-top: 8vh;">
+            <div class="col-md-6" style="text-align: center; width: 100%; height:100%; padding-left: 5vw; padding-right: 5vw;">
+                <h4 class="acc-header">Resume</h4>
+                <div id="adobe-dc-view" style="width: 100%;"></div>
+                <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+                <script type="text/javascript">
+                    document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                        var adobeDCView = new AdobeDC.View({clientId: "aff93c28070042e081262c2b7592c121", divId: "adobe-dc-view"});
+                        adobeDCView.previewFile({
+                            content:{location: {url: "https://drive.google.com/file/d/1AgIE-17xDAvQxBT5k3uxwtIFTuh67X8j/preview"}},
+                            metaData:{fileName: "Bodea Brochure.pdf"}
+                        }, {embedMode: "IN_LINE", showDownloadPDF: false, showPrintPDF: false});
+                    });
+                </script>
+                <!-- <embed src="https://drive.google.com/file/d/1AgIE-17xDAvQxBT5k3uxwtIFTuh67X8j/preview" type="application/pdf" width="100%" view="Fit"/> -->
+                
+            </div>
+            <div class="col-md-6" style="text-align: center;"">
+                <h4 class="acc-header">Awards</h4>
+                <div class="table-responsive-md" style="margin-left: 5vw; margin-right: 5vw;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1/2018</th>
+                                <td>Top 300 Scholar for the Regeneron Science Talent Search</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3/2017</th>
+                                <td>1<sup>st</sup> Place in Bioengineering and Computational Biology Category and Qualified to California
+                                State Science Fair</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3/2017</th>
+                                <td>1<sup>st</sup> Place for Best iOS App at HSHacks III</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11/2016</th>
+                                <td>Best Overall App at GunnHacks</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5/2016</th>
+                                <td>Top 20 International Finalist, DECA ICDC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3/2016</th>
+                                <td>1<sup>st</sup> Place, Entrepreneurship Independent Business, 2016 DECA SCDC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3/2015</th>
+                                <td>4<sup>th</sup> Place, Entrepreneurship Startup Business, 2016 DECA SCDC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2/2015</th>
+                                <td>Inspire Award, FTC Robotics</td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #FF5978">
+        <div class="container-fluid" style="padding-top: 6vh; padding-bottom: 4vh;">
+            <div style="text-align: center; margin-bottom: 3vh;">
+                <a href = "https://github.com/vinayksk/"><i class="fab fa-github-square fa-2x" style="margin-right: 1.5vw; color: #F1F0F2;"></i></a>
+                <a href = "https://devpost.com/vinayksk/"><i class="fab fa-dev fa-2x" style="margin-right: 1.5vw; color: #F1F0F2;"></i></a>
+                <a href = "https://linkedin.com/in/vinay-senthil/"><i class="fab fa-linkedin fa-2x" style="margin-right: 1.5vw; color: #F1F0F2;"></i></a>
+                <a href = "https://vinayksk.myportfolio.com/"><i class="fas fa-camera-retro fa-2x" style="color: #F1F0F2;"></i></a>
+            </div>
+            <p style="text-align: center; color: #F2F2F0;">Built by Vinay S. | <a style="color: #F2F2F0;" href="/lit proj/lynbrook.html"><u>2020</u></a></p>
         </div>
     </div>
 </body>

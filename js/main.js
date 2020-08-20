@@ -1,58 +1,38 @@
 $(document).ready(function () {
-    nav = $('.navbar').height();
-    final = $(window).height() - nav;
-    $('.int').height(final);
+    // let nav = $('#navb').height();
+    // let height = window.innerHeight;
+
+    // console.log(nav)
+    // console.log(height - nav)
+    // $("#intro_row").css('margin-top', nav + 'px');
+
 })
 
-$(document).keydown(function(e){
-    if(e.which === 123){
-       return false;
-    }
-});
-
-$(document).bind("contextmenu",function(e) { 
-	e.preventDefault();
- 
-});
-
 function smoothScroll(destination) {
-    nav = $('.navbar').height();
-    header = $('.header').height();
-    about = $('#about').height();
-    experience = $('#experience').height();
-    projects = $('#projects').height();
-    var d = 0
-    if (destination == "about"){
-        console.log(destination)
-        d = nav + header;
-        console.log(scroll)
+    let nav = $('#navb').outerHeight(true);
+    let intro = $('#intro').outerHeight(true);
+    let about = $('#about').outerHeight(true);
+    let exp = $('#experience').outerHeight(true);
+    let proj = $('#projects').outerHeight(true);
+
+    let d = 0;
+
+    if (destination == "about") {
+        d = nav + intro;
     }
-    if (destination == "experience"){
-        console.log(destination)
-        d = nav + header + about;
-        console.log(scroll)
+    if (destination == "experience") {
+        d = nav + intro + about;
     }
-    if (destination == "projects"){
-        console.log(destination)
-        d = nav + header + about + experience;
-        console.log(scroll)
+    if (destination == "projects") {
+        d = nav + intro + about + exp;
     }
-    if (destination == "accolades"){
-        console.log(destination)
-        d = nav + header + about + experience + projects;
-        console.log(scroll)
+    if (destination == "accolades") {
+        d = nav + intro + about + exp + proj;
     }
     window.scroll({
-        top: d + 34, 
+        top: d - nav, 
         left: 0, 
         behavior: 'smooth' 
       });
-    
-}
-
-function test(destination){
-    document.querySelector(destination).scrollIntoView({
-        behavior: 'smooth'
-    });
 }
 
